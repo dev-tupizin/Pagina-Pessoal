@@ -1,0 +1,141 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef3fb;
+    color: #222;
+    transition: background 0.4s, color 0.4s;
+}
+
+header {
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: background 0.4s, color 0.4s;
+}
+
+.topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#tema-btn {
+    background: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#tema-btn:hover {
+    background: #cfe0ff;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: background 0.4s, color 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    transition: transform 0.3s;
+}
+
+h2 {
+    color: #0d6efd;
+    border-left: 5px solid #0d6efd;
+    padding-left: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #e8f0ff;
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0d6efd;
+    color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    font-size: 0.9rem;
+    transition: background 0.4s, color 0.4s;
+}
+
+body.dark {
+    background-color: #000; 
+    color: #fff; 
+}
+
+body.dark header {
+    background-color: #000;
+    color: #0d6efd; 
+}
+
+body.dark .card {
+    background: #000;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,255,0.2);
+}
+
+body.dark h2 {
+    color: #0d6efd;
+    border-left-color: #0d6efd;
+}
+
+body.dark li {
+    background: #111;
+    color: #fff;
+}
+
+body.dark a {
+    color: #0d6efd;
+}
+
+body.dark footer {
+    background-color: #000;
+    color: #0d6efd;
+}
+
+body.dark #tema-btn {
+    background: #111;
+    color: #0d6efd;
+    border: 1px solid #0d6efd;
+}

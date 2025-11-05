@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cauã Tupinambá</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container topo">
+            <h1>Cauã Tupinambá</h1>
+            <button id="tema-btn" title="Alternar tema">🌙</button>
+        </div>
+        <p>Estudante de Desenvolvimento de Sistemas - SENAI Valinhos</p>
+    </header>
+
+    <main class="container">
+        <section id="sobre" class="card">
+            <h2>Sobre mim</h2>
+            <p>
+                Sou um estudante apaixonado por tecnologia e inovação. 
+                Gosto de aprender coisas novas, explorar diferentes áreas da programação 
+                e sempre busco evoluir para me tornar um profissional completo na área de Desenvolvimento de Sistemas.
+            </p>
+        </section>
+
+        <section id="hobbies" class="card">
+            <h2>Meus hobbies</h2>
+            <ul>
+                <li>🎮 Jogar videogame</li>
+                <li>⚽ Praticar esportes</li>
+                <li>💚 Amar o Palmeiras</li>
+            </ul>
+        </section>
+
+        <section id="contato" class="card">
+            <h2>Entrar em contato</h2>
+            <p>
+                🌐 <a href="https://github.com/dev-tupizin" target="_blank">GitHub</a><br>
+                📸 <a href="https://instagram.com/cau.a_zin" target="_blank">Instagram</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Cauã Tupinambá</p>
+    </footer>
+
+    <script>
+        const botao = document.getElementById('tema-btn');
+        const body = document.body;
+
+        botao.addEventListener('click', () => {
+            body.classList.toggle('dark');
+            botao.textContent = body.classList.contains('dark') ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>
